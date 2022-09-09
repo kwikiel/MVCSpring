@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Application {
-    private Repository repository;
+    private final Repository repository;
 
     Application(@Qualifier("DbRepo") Repository repository){
         this.repository = repository;
